@@ -21,7 +21,7 @@ pipeline {
     }
     stage('Archive artifact') {
       steps {
-        archiveArtifacts artifacts: 'target/release/substrate-test-node', fingerprint: true
+        archiveArtifacts artifacts: 'target/release/node-template', fingerprint: true
       }
     }
   }
